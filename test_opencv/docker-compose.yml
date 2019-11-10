@@ -1,0 +1,13 @@
+version: '3.1'
+services:
+  opencv_compiler:
+    # build: .
+    image: my_opencv:latest
+    container_name: opencv_compiler
+    # network_mode: "host"
+    restart: unless-stopped
+    # ports:
+    #   - 8280:80
+    volumes:
+      - /mnt/opencv:/data
+

@@ -1,0 +1,11 @@
+To compile a QT c++ project:
+
+https://vitux.com/compiling-your-first-qt-program-in-ubuntu/
+
+make a folder for the project
+cd into that folder
+run: "qmake -project"
+This will make a <project_name>.pro file
+    edit this file to add "QT += gui widgets" underneath the INCLUDEPATH += .
+run: "qmake <project_name>.pro
+run: "make"
