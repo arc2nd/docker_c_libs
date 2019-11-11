@@ -19,8 +19,7 @@ RUN apt-get -y install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrende
 # Qt WebKit
 RUN apt-get -y install flex bison gperf libicu-dev libxslt-dev ruby
 # Qt Multimedia
-# RUN apt-get -y install libasound2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
-# RUN apt-get -y install libasound2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
+RUN apt-get -y install libasound2-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
 
 COPY qt-noninteractive.qs /qt-noninteractive.qs
 #RUN ./qt-opensource-linux-x64-${QT_VERSION_B}.run --script 
